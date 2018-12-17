@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorLightGrey">#bababa</color>
+    <color name="colorDivider">#6e6e6e</color>
+    <color name="colorScoreResult">#1EB8F4</color>
+    <color name="colorTextTitle">#000000</color>
+    <color name="colorTextRegular">#252525</color>
+    <color name="colorTextLight">#dcdbdb</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="correctHeadline">#f910b631</color>
+    <color name="incorrectHeadline">#f9bf3331</color>
+</resources>

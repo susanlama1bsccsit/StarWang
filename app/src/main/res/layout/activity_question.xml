@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#717171"
+             tools:context=".view.QuestionActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <android.support.v4.widget.NestedScrollView android:layout_width="match_parent"
+                                                android:id="@+id/fullscreen_content"
+                                                android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:orientation="vertical">
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_margin="16dp" android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:text="Guess this headline! "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:id="@+id/label"
+                        android:gravity="left"
+                        android:layout_gravity="left"
+                        android:textColor="@color/colorWhite"/>
+
+                <TextView
+                        android:text="Score"
+                        android:id="@+id/tv_score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:gravity="right"
+                        android:layout_gravity="right"
+                        android:textColor="@color/colorWhite"/>
+            </LinearLayout>
+
+
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp" tools:srcCompat="@tools:sample/backgrounds/scenic"
+                    android:id="@+id/headline_image" android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="16dp"/>
+
+            <TextView
+                    android:text="+8 points coming your way!"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/tv_remaining_points"
+                    android:textColor="@color/colorWhite"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"/>
+            <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:progressTint="@color/colorWhite"
+                    android:background="@drawable/rectangle_shape_progress"
+                    android:progress="30"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_height="5dp"
+                    android:id="@+id/score_progressbar"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/headlines_layout"
+                    android:orientation="vertical">
+
+                <TextView
+                        tools:text="Headline one"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/colorTextTitle"
+                        android:background="@drawable/rectangle_shape"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:id="@+id/tv_headline_one"
+                        android:padding="16dp"/>
+
+                <TextView
+                        tools:text="Headline Two"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/colorTextTitle"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/rectangle_shape"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_headline_two"
+                        android:padding="16dp"/>
+
+                <TextView
+                        tools:text="Headline Three"
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorTextTitle"
+                        android:background="@drawable/rectangle_shape"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_headline_three"
+                        android:padding="16dp"/>
+
+                <TextView
+                        android:text="Skip I give up"
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorTextLight"
+                        android:background="@drawable/rectangle_shape_btn"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_skip_btn"
+                        android:padding="16dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>

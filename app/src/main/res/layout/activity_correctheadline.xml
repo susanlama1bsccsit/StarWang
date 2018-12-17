@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#717171"
+        tools:context=".view.CorrectHeadlineActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <android.support.v4.widget.NestedScrollView android:layout_width="match_parent"
+                                                android:id="@+id/fullscreen_content_cha"
+                                                android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                      android:orientation="vertical">
+
+            <TextView
+                    android:text="Score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_score"
+                    android:textSize="25sp"
+                    android:background="@drawable/round_shape"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginStart="8dp"/>
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:scaleType="centerCrop"
+                    android:layout_height="100dp" tools:srcCompat="@tools:sample/backgrounds/scenic"
+                    android:id="@+id/iv_currentImage" android:layout_marginTop="32dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="16dp"/>
+
+            <TextView
+                    tools:text="Correct Headline"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorTextTitle"
+                    android:background="@color/colorWhite"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_correct_headline"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:padding="16dp"/>
+
+            <TextView
+                    tools:text="Stand First"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/colorTextTitle"
+                    android:background="@color/colorWhite"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_stand_first"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:padding="16dp"/>
+
+            <TextView
+                    android:text="Read Article"
+                    android:textColor="@color/colorTextRegular"
+                    android:layout_width="wrap_content"
+                    android:backgroundTint="@color/colorWhite"
+                    android:drawableRight="@drawable/ic_chevron_right_black_24dp"
+                    android:padding="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_gravity="end"
+                    android:background="@color/colorWhite"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/read_article_btn"/>
+
+            <TextView
+                    android:text="Next Question"
+                    android:textColor="@color/colorTextRegular"
+                    android:layout_width="match_parent"
+                    android:backgroundTint="@color/colorWhite"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_gravity="center"
+                    android:background="@color/colorWhite"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/next_question_btn"/>
+
+            <TextView
+                    android:text="How am I doing in the Leaderboard?"
+                    android:textColor="@color/colorTextRegular"
+                    android:layout_width="match_parent"
+                    android:backgroundTint="@color/colorWhite"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="32dp"
+                    android:layout_gravity="center"
+                    android:background="@color/colorWhite"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/leader_board_btn"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>
